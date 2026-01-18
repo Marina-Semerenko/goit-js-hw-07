@@ -1,0 +1,11 @@
+const nameInput = document.querySelector('#name-input');
+const nameOutput = document.querySelector('#name-output');
+nameInput.addEventListener('input', updateGreeting);
+function updateGreeting(event) {
+    const trimmedValue = event.currentTarget.value.trim();
+    if (trimmedValue ==="") {
+        nameOutput.textContent = 'Anonymus';
+    } else {nameOutput.textContent = trimmedValue;
+
+    }
+    }
