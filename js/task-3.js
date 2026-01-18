@@ -4,7 +4,7 @@ nameInput.addEventListener('input', updateGreeting);
 function updateGreeting(event) {
     const trimmedValue = event.currentTarget.value.trim();
     if (trimmedValue ==="") {
-        nameOutput.textContent = 'Anonymus';
+        nameOutput.textContent = 'Anonymous';
     } else {nameOutput.textContent = trimmedValue;
 
     }
